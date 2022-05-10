@@ -1,0 +1,126 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+
+@font-face{
+	font-family : Cassandra;
+}
+
+#Header{
+	font-size: 20px;
+	display : flex;
+}
+
+#Header > h1{
+	color : #FE5252;
+}
+
+.Rectangle{
+	height: 0px;
+	transition: height 2s;
+}
+
+
+.Rectangle : hover{
+	height: 100%;
+}
+
+/* Rectangle 1 */
+
+#Rectangle_1{
+position: absolute;
+width: 100%;
+height: 50%;
+top: 160px;
+
+background: #C7F5FE;
+}
+
+/* Rectangle 2 */
+
+#Rectangle_2{
+position: absolute;
+width: 100%;
+height: 50%;
+top: 320px;
+
+background: #C7E4FE;
+}
+
+/* Rectangle 3 */
+
+#Rectangle_3{
+position: absolute;
+width: 100%;
+height: 50%;
+top: 490px;
+
+background: #C8C7FE;
+}
+
+
+#content{
+
+}
+
+
+
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  animation-duration:1.5s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+#inp{
+	margin-top: 150px;
+	width:60%;
+	height: 50px;
+	border-radius: 15px;
+	font-size:15px;
+	position: absolute;
+}
+
+button{
+	position: absolute;
+	border-radius: 15px;
+	width:100px;
+	height: 50px;
+	background-color: #f3f798;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
